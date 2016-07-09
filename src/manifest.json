@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "sanhun",
+  "description": "I want my noodle done perfectly.",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+      "scripts": [
+          "background.js"
+      ]
+  },
+  "permissions":["alarms"],
+  "content_security_policy": " script-src 'self'; object-src 'self'"
+}
